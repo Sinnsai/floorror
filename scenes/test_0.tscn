@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cj6js7k26ggtj" path="res://icon.svg" id="1_i62c2"]
 [ext_resource type="Script" uid="uid://x4jb6y1g45la" path="res://script/character_body_2d.gd" id="1_x0l27"]
+[ext_resource type="Texture2D" uid="uid://dhsk0je3u0q7i" path="res://assets/pictures/testpic.JPG" id="3_6sjsr"]
+[ext_resource type="Script" uid="uid://cjbm3ogv2jgr5" path="res://script/texture_rect.gd" id="4_q6d7y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mbagn"]
 size = Vector2(131, 130)
@@ -9,6 +11,7 @@ size = Vector2(131, 130)
 [node name="Test0" type="Node2D" unique_id=162277255]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=499318797]
+visible = false
 position = Vector2(20, -1)
 script = ExtResource("1_x0l27")
 metadata/_edit_group_ = true
@@ -20,3 +23,12 @@ shape = SubResource("RectangleShape2D_mbagn")
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1944816775]
 position = Vector2(49, 69)
 texture = ExtResource("1_i62c2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1946564314]
+offset_left = -73.0
+offset_top = -280.0
+offset_right = 4823.0
+offset_bottom = 3392.0
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_6sjsr")
+script = ExtResource("4_q6d7y")

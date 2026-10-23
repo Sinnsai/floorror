@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://do51pu368y1cx"]
+
+[ext_resource type="Texture2D" uid="uid://dhsk0je3u0q7i" path="res://assets/pictures/testpic.JPG" id="1_jclca"]
+[ext_resource type="Script" uid="uid://cjbm3ogv2jgr5" path="res://script/texture_rect.gd" id="2_2hl8a"]
+
+[node name="Node2D" type="Node2D" unique_id=283340823]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=863162106]
+offset_left = -62.0
+offset_top = -261.0
+offset_right = 4834.0
+offset_bottom = 3411.0
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_jclca")
+script = ExtResource("2_2hl8a")
